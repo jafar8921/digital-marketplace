@@ -4,7 +4,7 @@ Please go through following step -
 
 1. After cloning the repository. Run
 
-    npm install
+        npm install
 
 2. create a .secret file and paste the private key of your wallet from metamask
 
@@ -12,8 +12,12 @@ Please go through following step -
 
         export const nftaddress = "nftaddress"
 
-4. Run  npx hardhat compile
+4. Run  
+    
+        npx hardhat compile
 
-5. Run npm run dev
+5. Run 
+
+        npm run dev
 
 Thank you
