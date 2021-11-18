@@ -58,7 +58,7 @@ export default function CreateItem() {
 
     /* next, create the item */
     let contract = new ethers.Contract(nftaddress, NFT.abi, signer)
-    let transaction = await contract.createToken(url, nftaddress)
+    let transaction = await contract.mintNFT(nftaddress, url)
     await transaction.wait()
     router.push('/')
   }
