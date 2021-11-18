@@ -1,5 +1,6 @@
 /* hardhat.config.js */
 require("@nomiclabs/hardhat-waffle")
+require("@nomiclabs/hardhat-ethers");
 const fs = require('fs')
 const privateKey = fs.readFileSync(".secret").toString().trim() || "01234567890123456789"
 
@@ -11,6 +12,10 @@ module.exports = {
     },
     mumbai: {
       url: "https://rpc-mumbai.matic.today",
+      accounts: [privateKey]
+    },
+    matic: {
+      url: "https://rpc-mainnet.maticvigil.com",
       accounts: [privateKey]
     }
   },
