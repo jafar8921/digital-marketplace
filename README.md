@@ -1,15 +1,19 @@
-# Basic Sample Hardhat Project
+# NFT Marketplace
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Please go through following step - 
 
-Try running some of the following tasks:
+1. After cloning the repository. Run
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+    npm install
+
+2. create a .secret file and paste the private key of your wallet from metamask
+
+3. create a config.json file and set the contract address
+
+        export const nftaddress = "nftaddress"
+
+4. Run  npx hardhat compile
+
+5. Run npm run dev
+
+Thank you
