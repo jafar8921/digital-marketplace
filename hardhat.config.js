@@ -15,7 +15,7 @@ module.exports = {
       accounts: [privateKey]
     },
     matic: {
-      url: "https://polygon-rpc.com",
+      url: "https://rpc-mumbai.maticvigil.com",
       accounts: [privateKey]
     }
   },

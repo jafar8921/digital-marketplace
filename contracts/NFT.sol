@@ -17,12 +17,12 @@ contract NFT is ERC721URIStorage, Ownable {
         public onlyOwner
         returns (uint256)
     {
-        _tokenIds.increment();
+         _tokenIds.increment();
 
         uint256 newItemId = _tokenIds.current();
-        _mint(recipient, newItemId);
+        _mint(msg.sender, newItemId);
         _setTokenURI(newItemId, tokenURI);
-
+        setApprovalForAll(recipient, true);
         return newItemId;
     }
 }
